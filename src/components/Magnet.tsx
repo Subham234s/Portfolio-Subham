@@ -28,8 +28,6 @@ const Magnet: React.FC<MagnetProps> = ({
       const centerY = rect.top + rect.height / 2
       const distX = e.clientX - centerX
       const distY = e.clientY - centerY
-      const absDistX = Math.abs(e.clientX - rect.left)
-      const absDistY = Math.abs(e.clientY - rect.top)
       const withinX = e.clientX >= rect.left - padding && e.clientX <= rect.right + padding
       const withinY = e.clientY >= rect.top - padding && e.clientY <= rect.bottom + padding
 
